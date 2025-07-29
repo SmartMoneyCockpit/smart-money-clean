@@ -1,10 +1,4 @@
 
-email_schedule: "07:45"
-accounts:
-  - IBKR
-  - Wealthsimple
-  - RBC
-strategies:
-  - Yield/Defensive Equity
-  - Macro Alignment
-  - Tactical Swing
+sheets:
+  trades: "TradeLog"
+  health: "HealthLog"

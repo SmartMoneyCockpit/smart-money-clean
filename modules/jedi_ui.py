@@ -2,9 +2,5 @@
 import streamlit as st
 
 def main():
-    st.header("🧘 Jedi Theme Settings")
-    mode = st.radio("Choose Your Path:", ["Subtle", "Bold"])
-    if mode == "Subtle":
-        st.success("Subtle Jedi mode activated. Clean and elegant.")
-    else:
-        st.warning("Bold Jedi mode activated. Prepare for full immersion.")
+    st.header("Jedi Ui.Py Page")
+    st.write("This is a placeholder for the jedi_ui.py.")
