@@ -1,8 +1,7 @@
 
-# Smart Money Cockpit – Full Jedi Edition
+# Smart Money Cockpit – Final Full Visual Edition
 
-This deployment includes:
-- Trade & Health logging to Google Sheets
-- Smart Money visuals (coin + animals)
-- Streamlit-ready layout
-- Future-ready modules (PnL, PDF, Journal, Logic, FX, Training)
+- Fully working Trade Logger and Health Tracker
+- Google Sheets integrated
+- Real image files loaded (coin + animals)
+- PDF, Journal, PnL, and Logic modules scaffolded for expansion
