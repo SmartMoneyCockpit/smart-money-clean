@@ -37,10 +37,10 @@ def analyze_trade(row):
     qty = row.get("Quantity", 0)
     price = row.get("Price", 0)
     if "sweep" in notes or "breakout" in notes:
-        return "🟢 **Smart Money Aligned** – Strategy keyword found"
+        return "🟢 Smart Money Aligned"
     elif qty < 10 or price < 5:
-        return "🔴 **Weak Trade** – Too small or low liquidity"
+        return "🔴 Weak Trade – Too small or low liquidity"
     elif "review" in notes or "watch" in notes:
-        return "🟡 **Neutral** – Marked for review"
+        return "🟡 Neutral – Marked for review"
     else:
         return "⚪ No signal"
