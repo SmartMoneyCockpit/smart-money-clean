@@ -1,7 +1,7 @@
 
-# Smart Money Cockpit – Final Full Visual Edition
+# Smart Money Cockpit – Final Live Version
 
-- Fully working Trade Logger and Health Tracker
-- Google Sheets integrated
-- Real image files loaded (coin + animals)
-- PDF, Journal, PnL, and Logic modules scaffolded for expansion
+Includes:
+- Smart Money Logic activated
+- Visuals fixed (coin + animal)
+- Sheet-ready, deploy-ready

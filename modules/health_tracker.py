@@ -1,35 +1,6 @@
 
 import streamlit as st
-import gspread
-import json
-import os
-from datetime import datetime
-
 def main():
-    st.image("static/assets/animal_1.jpg", width=120)
-    st.header("🩺 Health Tracker")
-    bp = st.text_input("Blood Pressure (e.g., 120/80)")
-    hr = st.number_input("Heart Rate (BPM)", step=1)
-    sleep = st.slider("Hours Slept", 0, 12)
-    notes = st.text_area("Notes (Optional)")
-
-    if st.button("Submit Health Log"):
-        if bp and hr:
-            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            row = [now, bp, hr, sleep, notes]
-            if push_to_sheets("COCKPIT", "HealthLog", row):
-                st.success("✅ Health data logged.")
-            else:
-                st.error("❌ Failed to log health data.")
-        else:
-            st.warning("Please enter BP and HR.")
-
-def push_to_sheets(sheet_name, tab_name, row_data):
-    try:
-        creds = json.loads(os.environ["GOOGLE_CREDENTIALS"])
-        client = gspread.service_account_from_dict(creds)
-        sheet = client.open(sheet_name).worksheet(tab_name)
-        sheet.append_row(row_data)
-        return True
-    except Exception as e:
-        return e
+    st.header("Health Tracker.Py Page")
+    st.image("static/assets/animal_2.jpg", width=120)
+    st.write("This module is scaffolded and ready to expand.")
