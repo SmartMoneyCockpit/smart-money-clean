@@ -1,4 +1,3 @@
-
 import streamlit as st
 import gspread
 import json
@@ -7,6 +6,7 @@ from datetime import date
 
 def main():
     st.header("📘 Trade Logger")
+
     ticker = st.text_input("Ticker Symbol")
     trade_date = st.date_input("Trade Date", value=date.today())
     quantity = st.number_input("Quantity", step=1, format="%d")
@@ -16,10 +16,12 @@ def main():
     if st.button("Submit Trade"):
         if ticker and quantity and price:
             row = [str(trade_date), ticker.upper(), quantity, price, notes]
-            if push_to_sheets("COCKPIT", "TradeLog", row):
-                st.success(f"✅ Trade for {ticker.upper()} logged.")
+            result = push_to_sheets("COCKPIT", "TradeLog", row)
+            if result is True:
+                st.success(f"✅ Trade for {ticker.upper()} logged successfully.")
             else:
-                st.error("❌ Failed to log trade. Check Google Sheets access.")
+                st.error("❌ Failed to log trade.")
+                st.exception(result)  # Display the actual error for debugging
         else:
             st.warning("Please complete all required fields.")
 
@@ -31,5 +33,4 @@ def push_to_sheets(sheet_name, tab_name, row_data):
         sheet.append_row(row_data)
         return True
     except Exception as e:
-        print("Google Sheets error:", e)
-        return False
+        return e
