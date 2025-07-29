@@ -1,4 +1,7 @@
 
-# Smart Money Cockpit – COCKPIT Sheet Fix
+# Smart Money Cockpit – Final All-in-One Deployment
 
-This version connects to your main Google Sheet named "COCKPIT" and specifically writes trades to the "TradeLog" tab.
+Includes:
+- Google Sheets-linked Trade Logger + Health Tracker
+- Placeholder modules for future upgrades
+- Modular config + Streamlit compatibility

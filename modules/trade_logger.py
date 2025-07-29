@@ -1,3 +1,4 @@
+
 import streamlit as st
 import gspread
 import json
@@ -6,7 +7,6 @@ from datetime import date
 
 def main():
     st.header("📘 Trade Logger")
-
     ticker = st.text_input("Ticker Symbol")
     trade_date = st.date_input("Trade Date", value=date.today())
     quantity = st.number_input("Quantity", step=1, format="%d")
@@ -21,7 +21,7 @@ def main():
                 st.success(f"✅ Trade for {ticker.upper()} logged successfully.")
             else:
                 st.error("❌ Failed to log trade.")
-                st.exception(result)  # Display the actual error for debugging
+                st.exception(result)
         else:
             st.warning("Please complete all required fields.")
 
