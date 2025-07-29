@@ -1,3 +1,3 @@
-# Smart Money Cockpit
+# Smart Money Cockpit – Full Deployment
 
-Streamlit Cloud-compatible version.
+This version includes all cockpit modules (no IBKR).
