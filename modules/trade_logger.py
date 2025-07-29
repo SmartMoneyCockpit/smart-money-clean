@@ -16,18 +16,18 @@ def main():
     if st.button("Submit Trade"):
         if ticker and quantity and price:
             row = [str(trade_date), ticker.upper(), quantity, price, notes]
-            if push_to_sheets("TradeLog", row):
+            if push_to_sheets("COCKPIT", "TradeLog", row):
                 st.success(f"✅ Trade for {ticker.upper()} logged.")
             else:
                 st.error("❌ Failed to log trade. Check Google Sheets access.")
         else:
             st.warning("Please complete all required fields.")
 
-def push_to_sheets(sheet_name, row_data):
+def push_to_sheets(sheet_name, tab_name, row_data):
     try:
         creds = json.loads(os.environ["GOOGLE_CREDENTIALS"])
         client = gspread.service_account_from_dict(creds)
-        sheet = client.open(sheet_name).sheet1
+        sheet = client.open(sheet_name).worksheet(tab_name)
         sheet.append_row(row_data)
         return True
     except Exception as e:

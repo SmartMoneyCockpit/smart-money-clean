@@ -1,4 +1,5 @@
 
 sheets:
-  trades: "TradeLog"
+  trades: "COCKPIT"
+  trades_tab: "TradeLog"
   health: "HealthLog"

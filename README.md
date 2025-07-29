@@ -1,8 +1,4 @@
 
-# Smart Money Cockpit – Full Jedi Deployment
+# Smart Money Cockpit – COCKPIT Sheet Fix
 
-This cockpit includes:
-- Trade Logger (Google Sheets enabled)
-- Health Tracker (Google Sheets enabled)
-- All modules scaffolded for expansion
-- Jedi Theme and Training Tier structure
+This version connects to your main Google Sheet named "COCKPIT" and specifically writes trades to the "TradeLog" tab.

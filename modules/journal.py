@@ -2,5 +2,5 @@
 import streamlit as st
 
 def main():
-    st.header("Journal")
-    st.write("This is a placeholder for the journal.py module.")
+    st.header("Journal.Py Page")
+    st.write("This is a placeholder for the journal.py.")
