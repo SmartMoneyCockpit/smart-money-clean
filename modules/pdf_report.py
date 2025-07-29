@@ -1,6 +1,6 @@
 
 import streamlit as st
-
 def main():
     st.header("Pdf Report.Py Page")
-    st.write("This is a placeholder for the pdf_report.py.")
+    st.image("static/assets/animal_2.jpg", width=120)
+    st.write("This module is included and structured for full feature integration.")

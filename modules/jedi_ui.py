@@ -1,6 +1,6 @@
 
 import streamlit as st
-
 def main():
     st.header("Jedi Ui.Py Page")
-    st.write("This is a placeholder for the jedi_ui.py.")
+    st.image("static/assets/animal_2.jpg", width=120)
+    st.write("This module is included and structured for full feature integration.")

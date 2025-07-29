@@ -7,7 +7,8 @@ from modules import (
 )
 
 st.set_page_config(page_title="Smart Money Cockpit", layout="wide")
-st.title("📊 Smart Money Cockpit")
+st.image("static/assets/coin.png", width=60)
+st.title("🧠 Smart Money Cockpit – Full Jedi Version")
 
 tabs = {
     "PnL Tracker": pnl_tracker,
@@ -22,5 +23,5 @@ tabs = {
     "Training Tier": training
 }
 
-choice = st.sidebar.selectbox("📂 Select a Module", list(tabs.keys()))
+choice = st.sidebar.selectbox("📂 Select Module", list(tabs.keys()))
 tabs[choice].main()

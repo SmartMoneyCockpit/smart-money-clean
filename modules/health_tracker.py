@@ -6,6 +6,7 @@ import os
 from datetime import datetime
 
 def main():
+    st.image("static/assets/animal_1.jpg", width=120)
     st.header("🩺 Health Tracker")
     bp = st.text_input("Blood Pressure (e.g., 120/80)")
     hr = st.number_input("Heart Rate (BPM)", step=1)

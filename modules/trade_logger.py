@@ -6,6 +6,7 @@ import os
 from datetime import date
 
 def main():
+    st.image("static/assets/coin.png", width=80)
     st.header("📘 Trade Logger")
     ticker = st.text_input("Ticker Symbol")
     trade_date = st.date_input("Trade Date", value=date.today())

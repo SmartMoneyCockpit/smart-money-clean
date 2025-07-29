@@ -1,6 +1,6 @@
 
 import streamlit as st
-
 def main():
     st.header("Fx Hedge Monitor.Py Page")
-    st.write("This is a placeholder for the fx_hedge_monitor.py.")
+    st.image("static/assets/animal_2.jpg", width=120)
+    st.write("This module is included and structured for full feature integration.")

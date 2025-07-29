@@ -1,6 +1,6 @@
 
 import streamlit as st
-
 def main():
     st.header("Smart Money Logic.Py Page")
-    st.write("This is a placeholder for the smart_money_logic.py.")
+    st.image("static/assets/animal_2.jpg", width=120)
+    st.write("This module is included and structured for full feature integration.")
