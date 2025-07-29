@@ -7,7 +7,6 @@ from modules import (
 )
 
 st.set_page_config(page_title="Smart Money Cockpit", layout="wide")
-
 st.title("📊 Smart Money Cockpit")
 
 tabs = {

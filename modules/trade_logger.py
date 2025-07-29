@@ -7,7 +7,6 @@ from datetime import date
 
 def main():
     st.header("📘 Trade Logger")
-
     ticker = st.text_input("Ticker Symbol")
     trade_date = st.date_input("Trade Date", value=date.today())
     quantity = st.number_input("Quantity", step=1, format="%d")
