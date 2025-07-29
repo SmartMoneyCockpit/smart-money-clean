@@ -8,7 +8,7 @@ from modules import (
 
 st.set_page_config(page_title="Smart Money Cockpit", layout="wide")
 st.image("static/assets/coin.png", width=60)
-st.title("🧠 Smart Money Cockpit – Streamlined Live Edition")
+st.title("🧠 Smart Money Cockpit – Final Full Deployment")
 
 tabs = {
     "PnL Tracker": pnl_tracker,

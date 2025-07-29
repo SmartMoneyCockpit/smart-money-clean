@@ -28,7 +28,6 @@ def main():
             st.markdown(f"**{row['Ticker']}** | Qty: {row['Quantity']} | ${row['Price']} | Note: _{row['Notes']}_")
             st.markdown(row['Signal'])
             st.markdown("---")
-
     except Exception as e:
         st.error("Failed to load Smart Money logic.")
         st.exception(e)
