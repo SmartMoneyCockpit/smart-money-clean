@@ -1,1 +1,6 @@
-# pnl_tracker.py - placeholder logic
+
+import streamlit as st
+
+def main():
+    st.header("Pnl Tracker Page")
+    st.write("This is a placeholder for the pnl_tracker.py module.")
